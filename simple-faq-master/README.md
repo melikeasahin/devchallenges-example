@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot][(./Deskop_1350px.jpg)]
+![screenshot][(./images/Deskop_1350px.jpg)]
 
 ### Built with
 
