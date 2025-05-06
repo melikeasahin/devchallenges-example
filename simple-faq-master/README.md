@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot][(./Deskop_1350px.jpg)]
 
 ### Built with
 
@@ -59,3 +59,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 - Website [your-website.com](https://melikeasahin.github.io/devchallenges-example/simple-faq-master/)
 - GitHub [@your-username](https://{github.com/melikeasahin})
+
+[def]: https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png
