@@ -39,8 +39,13 @@ body {
 }
 
 .thin-line {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d2d5da;
   margin: 20px 0px;
+}
+
+a {
+  color: #4e80ee;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1320px) {
