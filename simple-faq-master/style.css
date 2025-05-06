@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contanier {
+  text-align: center;
+  padding: 55px 0;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.sub-contanier {
+  background-color: #f5f6f8;
+  line-height: 55px;
+  padding: 50px;
+}
+
+.sub-contanier .content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.detail {
+  line-height: 30px;
+  padding-left: 25px;
+}
+
+.thin-line {
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .sub-contanier .content {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .sub-title {
+    padding: 20px;
+  }
+  .sub-contanier {
+    padding: 50px 15px;
+  }
+  .explanation {
+    line-height: normal;
+    padding: 20px 0;
+  }
+  .explanation-2 {
+    line-height: normal;
+    padding: 20px 0;
+  }
+}
