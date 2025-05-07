@@ -33,6 +33,7 @@ body {
 .form-card {
   background: #ffffff;
   border-radius: 12px;
+  margin-left: 70px;
   padding: 26px 0;
   margin-top: 44px;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.08);
@@ -41,7 +42,7 @@ body {
 
 .email-input {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -49,7 +50,11 @@ body {
   height: 60px;
   margin-bottom: 26px;
   text-align: center;
-  color: #000000;
+}
+
+.email-input::placeholder {
+  color: #394150;
+  opacity: 1;
 }
 
 .subscribe-btn {
@@ -68,4 +73,34 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #394150;
+}
+
+@media (max-width: 412px) {
+  .container {
+    max-width: 410px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  .form-card {
+    width: 350px;
+    margin-left: 2px;
+  }
+  .email-input {
+    width: 310px;
+    height: 55px;
+  }
+  .subscribe-btn {
+    width: 310px;
+    height: 55px;
+  }
+  .disclaimer {
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 22px;
+  }
 }
