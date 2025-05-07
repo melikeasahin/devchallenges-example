@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<img src="./Ekran görüntüsü 2025.png alt="">
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
@@ -77,5 +77,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [your-website.com](https://melikeasahin.github.io/devchallenges-example/minimal-blog-card/)
-- GitHub [@your-username](https://github.com/melikeasahin/devchallenges-example)
+- Website (https://melikeasahin.github.io/devchallenges-example/minimal-blog-card/)
+- GitHub (https://github.com/melikeasahin/devchallenges-example)
