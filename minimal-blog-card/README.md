@@ -36,7 +36,7 @@
 
 ## Overview
 
-<img src="./Ekran görüntüsü 2025.png alt="">
+<img src=".//design/Desktop_1350px.jpg>
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
@@ -77,5 +77,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website (https://melikeasahin.github.io/devchallenges-example/minimal-blog-card/)
-- GitHub (https://github.com/melikeasahin/devchallenges-example)
+- Website https://melikeasahin.github.io/devchallenges-example/minimal-blog-card/
+- GitHub https://github.com/melikeasahin/devchallenges-example
