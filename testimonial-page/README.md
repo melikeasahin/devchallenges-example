@@ -77,5 +77,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [your-website.com](https://melikeasahin.github.io/devchallenges-example/Testimonial-page/)
+- Website [your-website.com](https://melikeasahin.github.io/devchallenges-example/testimonial-page/)
 - GitHub [@your-username](https://github.com/melikeasahin/devchallenges-example)
