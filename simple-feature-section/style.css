@@ -6,7 +6,7 @@
 
 body {
   max-width: 1350px;
-  margin: 5rem auto;
+  margin: 3.5rem auto;
   font-family: "Outfit", sans-serif;
   background-color: hsl(224, 36%, 11%);
   background-image: url(./resources/Background_image.svg);
