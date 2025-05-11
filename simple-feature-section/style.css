@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1350px;
+  margin: 5rem auto;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(224, 36%, 11%);
+  background-image: url(./resources/Background_image.svg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.hero-section {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.title {
+  color: hsl(220, 10%, 90%);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.small-text {
+  color: hsl(216, 10%, 64%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.card {
+  background: hsl(215, 25%, 17%);
+  width: 20rem;
+  height: auto;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+}
+
+.emoji-1 {
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background: hsl(38, 87%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-2 {
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background: hsl(217, 84%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-3 {
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background: hsl(358, 75%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-title {
+  color: hsl(220, 10%, 90%);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.explanation {
+  color: hsl(220, 10%, 84%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.image {
+  border-radius: 1rem;
+}
+@media (max-width: 1024px) {
+  .feature-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
