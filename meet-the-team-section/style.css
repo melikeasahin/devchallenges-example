@@ -39,6 +39,11 @@ body {
   padding: 2.2rem;
 }
 
+.background-shape {
+  position: absolute;
+  opacity: 0.5;
+}
+
 .top-text {
   color: var(--color-dark-blue);
 }
@@ -133,7 +138,7 @@ body {
   position: absolute;
   padding: 1.5rem;
   bottom: 0rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .up {
