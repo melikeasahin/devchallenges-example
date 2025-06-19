@@ -1,0 +1,10 @@
+:root {
+    --color-dark: hsl(240, 2%, 12%);
+    --color-gray-dark: hsl(222, 14%, 27%);
+    --color-gray: hsl(220, 10%, 84%);
+    --color-gray-light: hsl(220, 14%, 96%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-border: hsl(216, 12%, 88%);
+  }
+  700 bold 1.5rem
+  400-500-600 regular-medium-semibold 1rem
