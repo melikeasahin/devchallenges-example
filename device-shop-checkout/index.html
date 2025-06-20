@@ -13,10 +13,164 @@
     />
   </head>
   <body>
-    Checkout 3 items iPhone 12 Pro Golden $999.00 x 1 Apple Watch Blue $399.00
-    iMac Green $1199.00 Enter coupon code Apply Coupon Sub total $2597.00 Tax
-    $623.28 Total $3220.28 Contact Information First & Last name Enter first &
-    last name Email Address Enter email address Country Finland Postal Code
-    00270 Continue
+    <main>
+      <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+          <h1>Checkout</h1>
+          <div class="item">3 ITEMS</div>
+        </div>
+
+        <!-- BLOG -->
+        <div class="blog">
+          <!-- LEFT -->
+          <div class="left">
+            <!-- IPHONE 12 PRO -->
+            <div class="product">
+              <!-- İMG -->
+              <div class="images">
+                <img src="./resources/Gold.png" alt="" />
+              </div>
+              <!-- İNFO -->
+              <div class="info">
+                <div class="product-amount">
+                  <div class="product-name">iPhone 12 Pro</div>
+                  <div class="amount">$999.00</div>
+                </div>
+                <!-- COLOR -->
+                <div class="color">Golden</div>
+                <!-- PİECE -->
+                <div class="product-piece">
+                  <div class="piece">x 1</div>
+                  <div class="close">X</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- APPLE WATCH BLUE -->
+            <div class="product">
+              <!-- İMG -->
+              <div class="images">
+                <img src="./resources/Apple-watch.png" alt="" />
+              </div>
+              <!-- İNFO -->
+              <div class="info">
+                <div class="product-amount">
+                  <div class="product-name">Apple Watch</div>
+                  <div class="amount">$399.00</div>
+                </div>
+                <!-- COLOR -->
+                <div class="color">Blue</div>
+                <!-- PİECE -->
+                <div class="product-piece">
+                  <div class="piece">x 1</div>
+                  <div class="close">X</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- iMAC GREEN -->
+            <div class="product">
+              <!-- İMG -->
+              <div class="images">
+                <img src="./resources/iMac.png" alt="" />
+              </div>
+              <!-- İNFO -->
+              <div class="info">
+                <div class="product-amount">
+                  <div class="product-name">iMac</div>
+                  <div class="amount">$1199.00</div>
+                </div>
+                <!-- COLOR -->
+                <div class="color">Green</div>
+                <!-- PİECE -->
+                <div class="product-piece">
+                  <div class="piece">x 1</div>
+                  <div class="close">X</div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- COUPON -->
+            <div class="cuopon">
+              <form action="/kuponu-uygula" method="post">
+                <input type="text" placeholder="Enter coupon code" />
+                <button type="submit">Apply Coupon</button>
+              </form>
+            </div>
+            <!-- PRİCİNG -->
+            <div class="pricing">
+              <div class="sub-total">
+                <div class="pricing-name">Sub total</div>
+                <div class="sub-total-pricing">$2597.00</div>
+              </div>
+              <div class="tax">
+                <div class="pricing-name">Tax</div>
+                <div class="tax-pricing">$623.28</div>
+              </div>
+              <div class="total">
+                <div class="pricing-name">Total</div>
+                <div class="total-pricing">$3220.28</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RİGHT -->
+          <div class="right">
+            <div class="title">Contact Information</div>
+            <div>
+              <form class="contact-form">
+                <!-- First & Last name -->
+                <div class="form-group">
+                  <label for="name">First & Last name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter first & last name"
+                    required
+                  />
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email address"
+                    required
+                  />
+                </div>
+
+                <!-- Country -->
+                <div class="dual">
+                  <div class="dual1">
+                    <label for="subject">Country</label>
+                    <select name="subject" id="subject">
+                      <option value="Finland">Finland</option>
+                      <option value="Germany">Germany</option>
+                      <option value="France">France</option>
+                    </select>
+                  </div>
+
+                  <!-- Postal Code -->
+                  <div class="dual2">
+                    <label for="adress">Postal Code</label>
+                    <input type="number" id="adress" placeholder="00270" />
+                  </div>
+                </div>
+                <br /><br />
+
+                <!-- Continue-->
+                <button type="submit" class="continue">Continue</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
