@@ -1,0 +1,165 @@
+:root {
+  --primary: hsl(260, 74%, 58%); /* #845EEE */
+  --background: hsl(230, 39%, 32%); /* #5425AF */
+  --background-dark: hsl(210, 31%, 12%); /* #121826 */
+  --surface: hsl(220, 16%, 18%); /* #212936 */
+  --text-primary: hsl(220, 17%, 91%); /* #E5E7EB */
+  --text-secondary: hsl(240, 2%, 63%); /* #A1A1A9 */
+  --border: hsl(222, 14%, 27%); /* #394150 */
+  --muted: hsl(220, 13%, 34%); /* #4D5562 */
+  --overlay: hsla(260, 61%, 53%, 0.3); /* #845EEE4D */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-image: url(./resources/blur-radial.png);
+  background-color: var(--background-dark);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-position-x: 37%;
+  background-position-y: 20%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 500px;
+  color: var(--text-primary);
+  border-radius: 0.85rem;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box,
+    linear-gradient(
+        120deg,
+        rgba(229, 231, 235, 0.5) 0.05%,
+        rgba(229, 231, 235, 0) 25.05%
+      )
+      border-box;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 2.5rem;
+  align-items: center;
+}
+
+/* Step 1 */
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  font: 0.75em "Inter";
+}
+
+input::placeholder {
+  color: var(--text-primary);
+}
+
+button {
+  height: 2.5rem;
+  padding: 0 2rem;
+  background: linear-gradient(180deg, #845eee 0%, #652cd1 100%);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 2rem;
+  font: 0.75em "Inter";
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #652cd1 0%, #845eee 100%);
+}
+
+/* Step 2 */
+.topics {
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topic-option {
+  height: 2.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--border);
+  border: 1px solid #e5e7eb1c;
+  border-radius: 0.5rem;
+  font: 200 0.875em "Inter";
+}
+
+.topic-option:hover {
+  background: linear-gradient(180deg, #845eee 0%, #652cd1 100%);
+}
+
+/* Step 3 */
+.sum-name,
+.sum-email,
+.sub-title {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.step-indicator {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--text-secondary);
+  font: 0.75rem "Inter";
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: var(--border);
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #652cd1;
+  outline: 3px solid var(--border);
+}

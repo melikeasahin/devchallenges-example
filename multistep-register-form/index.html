@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multistep Register Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form action="">
+          <!-- Step 1 -->
+          <div class="step" data-step="1">
+            <div class="title">Register</div>
+            <div class="">
+              <div class="">
+                <label for="name">Name</label>
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="">
+              <div class="">
+                <label for="email">Email</label>
+              </div>
+              <div class="">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Example@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="continue">Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step" data-step="2" hidden>
+            <div class="title">Which topics you are interested in?</div>
+            <div class="topics">
+              <div class="topic-option" data-value="Software Development">
+                Software Development
+              </div>
+              <div class="topic-option" data-value="User Experience">
+                User Experience
+              </div>
+              <div class="topic-option" data-value="Graphic Design">
+                Graphic Design
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="continue">Continue</button>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="step" data-step="3" hidden>
+            <div class="title">Summary</div>
+            <div class="">
+              <div class="sum-name">
+                Name: <span class="summary-name"></span>
+              </div>
+              <div class="sum-email">
+                Email: <span class="summary-email"></span>
+              </div>
+            </div>
+            <div class="">
+              <div class="sub-title">Topics:</div>
+              <div class="summary-topics"></div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="continue">Continue</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Step Indicator-->
+      <div class="step-indicator">
+        <div class="">Step 1 of 3</div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
