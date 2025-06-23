@@ -57,9 +57,13 @@ body {
 
 /* Step 1 */
 .step {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 2rem;
+}
+
+.step.active {
+  display: flex;
 }
 
 .title {
@@ -126,7 +130,7 @@ button:hover {
   font: 200 0.875em "Inter";
 }
 
-.topic-option:hover {
+.topic-option.selected {
   background: linear-gradient(180deg, #845eee 0%, #652cd1 100%);
 }
 
@@ -138,12 +142,21 @@ button:hover {
   font-size: 1rem;
   line-height: 1.5;
 }
+.summary-list {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.summary-list li {
+  margin-bottom: 0.2rem;
+}
 
 .step-indicator {
   display: flex;
   gap: 1.5rem;
   color: var(--text-secondary);
-  font: 0.75rem "Inter";
+  font: 200 0.75rem "Inter";
 }
 
 .dots {
