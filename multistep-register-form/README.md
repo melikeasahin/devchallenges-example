@@ -81,4 +81,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Author
 
 - Website [your-website.com](https://github.com/melikeasahin/devchallenges-example)
-- GitHub [@your-username](https://melikeasahin.github.io/devchallenges-example/multistep-register-form)
+- GitHub [@your-username](https://melikeasahin.github.io/devchallenges-example/multistep-register-form/)
