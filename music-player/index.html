@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div>
+          <img class="cover" src="" alt="" />
+        </div>
+        <div class="info">
+          <div class="title"></div>
+          <div class="artist"></div>
+        </div>
+        <div class="progress">
+          <div class="time-stamps">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+          <input type="range" id="progressBar" value="0" />
+        </div>
+        <div class="controls">
+          <button id="prevButton" class="controls-button">
+            <img src="./resources/Stop_and_play_fill-1.svg" alt="" />
+          </button>
+          <button id="playButton" class="controls-button">
+            <img src="./resources/Play_fill.svg" alt="" />
+          </button>
+          <button id="nextButton" class="controls-button">
+            <img src="./resources/Stop_and_play_fill.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
