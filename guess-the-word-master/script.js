@@ -1,9 +1,19 @@
 // script.js
 
-const words = ["example", "javascript", "coding", "challenge"];
+const words = [
+  "example",
+  "javascript",
+  "coding",
+  "challenge",
+  "banana",
+  "react",
+  "python",
+  "master",
+];
 let currentWord = "";
 let tries = 0;
 let mistakes = 0;
+let mistakeLetters = [];
 
 function scrambleWord(word) {
   // Scramble and return the scrambled word
@@ -24,7 +34,12 @@ function generateRandomWord() {
   createInputFields(currentWord.length);
   tries = 0;
   mistakes = 0;
+  mistakeLetters = [];
+
+  updateTries();
+  updateMistakes();
 }
+updateTriesDots();
 
 function createInputFields(length) {
   // Create number of input fields according to the number of letters
@@ -36,12 +51,31 @@ function createInputFields(length) {
     input.type = "text";
     input.maxLength = 1;
     input.classList.add("letter-input");
-    input.addEventListener("input", handleInput);
+    // sadece aktif kutuda placeholder görünsün
+    input.addEventListener("input", (e) => {
+      handleInput();
+      input.addEventListener("focus", () => {
+        input.placeholder = "_";
+      });
+
+      input.addEventListener("blur", () => {
+        input.placeholder = "";
+      });
+
+      // Otomatik sonraki input'a geç
+      if (e.target.value && input.nextElementSibling) {
+        input.nextElementSibling.focus();
+      }
+    });
+
     container.appendChild(input);
   }
+  // ilk kutuya otomatik odaklan
+  const firstInput = container.querySelector("input");
+  if (firstInput) firstInput.focus();
 }
 
-function handleInput(event) {
+function handleInput() {
   // Handle input change event
   const inputs = document.querySelectorAll(".letter-input");
   let userGuess = "";
@@ -50,21 +84,70 @@ function handleInput(event) {
     userGuess += input.value.toLowerCase();
   });
 
+  // Tüm harfler girildiyse kontrol et
   if (userGuess.length === currentWord.length) {
     tries++;
 
     if (userGuess === currentWord) {
-      alert(`🎉 Doğru bildin! ${tries} denemede.`);
+      alert("🎉 Success! You guessed the word!");
+      generateRandomWord(); // Yeni kelimeyle devam
     } else {
       mistakes++;
-      alert("❌ Yanlış! Tekrar dene.");
+      // Yanlış harfleri bul
+      for (let i = 0; i < currentWord.length; i++) {
+        if (userGuess[i] && userGuess[i] !== currentWord[i]) {
+          const wrongLetter = userGuess[i];
+          if (!mistakeLetters.includes(wrongLetter)) {
+            mistakeLetters.push(wrongLetter);
+          }
+        }
+      }
+
+      alert("❌ Incorrect! Try again.");
+    }
+
+    updateTries();
+    updateMistakes();
+
+    if (tries >= 6) {
+      setTimeout(() => {
+        alert("😢 Too many mistakes! Starting over...");
+        generateRandomWord();
+      }, 100);
     }
   }
+}
+function updateTries() {
+  document.getElementById("triesCount").textContent = tries;
+}
+updateTriesDots();
+
+function updateMistakes() {
+  const list = mistakeLetters.length > 0 ? mistakeLetters.join(", ") : "-";
+  document.getElementById("mistakesList").textContent = list;
 }
 
 function resetGame() {
   // Handle game reset button
   generateRandomWord();
+}
+updateTriesDots();
+
+function updateTriesDots() {
+  const container = document.getElementById("triesDots");
+  container.innerHTML = "";
+
+  for (let i = 0; i < 6; i++) {
+    const dot = document.createElement("span");
+    dot.textContent = "●";
+    dot.classList.add("tries-dot");
+
+    if (i < tries) {
+      dot.classList.add("used"); // kullanılmış olanları soluk göster
+    }
+
+    container.appendChild(dot);
+  }
 }
 
 document

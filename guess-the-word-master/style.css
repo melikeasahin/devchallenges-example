@@ -50,6 +50,21 @@ body {
 .tries {
   font-size: 0.75rem;
 }
+.tries-dots {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.tries-dot {
+  font-size: 1.25rem;
+  color: hsl(286, 76%, 61%);
+  transition: opacity 0.3s ease;
+}
+
+.tries-dot.used {
+  opacity: 0.2;
+}
 
 .mistakes-box {
   display: flex;
@@ -60,7 +75,7 @@ body {
   font-size: 0.75rem;
 }
 
-.boxs {
+.box {
   font-size: medium;
   padding: 0.4rem 0.8rem;
   margin: 1.8rem;
@@ -71,6 +86,30 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+.letter-input {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid hsl(215, 18%, 35%);
+  border-radius: 0.45rem;
+  background-color: transparent;
+  color: hsl(216, 33%, 96%);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.letter-input:focus {
+  border-color: hsl(286, 76%, 61%);
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .button-container {
