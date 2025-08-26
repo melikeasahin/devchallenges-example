@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 0 auto;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  color: hsl(216, 33%, 96%);
+  background-image: url("./resources/bg-guess-the-word.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: hsl(231, 44%, 12%);
+  border-radius: 0.86rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.latters {
+  font-size: 2rem;
+  background: hsl(215, 18%, 35%);
+  box-shadow: 0px 4px 0px 0px #030616;
+  backdrop-filter: blur(8.5px);
+  border-radius: 0.25rem;
+  padding: 0.8rem 4rem;
+}
+
+.right {
+  font-size: 1rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.tries-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tries {
+  font-size: 0.75rem;
+}
+
+.mistakes-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mistakes {
+  font-size: 0.75rem;
+}
+
+.boxs {
+  font-size: medium;
+  padding: 0.4rem 0.8rem;
+  margin: 1.8rem;
+  border: 2px solid hsl(215, 18%, 35%);
+  border-radius: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+button {
+  font-size: 0.875rem;
+  color: hsl(216, 33%, 96%);
+  background: hsl(286, 76%, 61%);
+  box-shadow: 0px 4px 0px 0px hsl(290, 54%, 28%);
+  border: none;
+  border-radius: 0.45rem;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+}

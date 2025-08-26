@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Guess the word master | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/guess-the-word" target="_blank">Guess The Word Game
@@ -28,8 +28,6 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Built with](#built-with)
 - [Features](#features)
 - [Contact](#contact)
@@ -39,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<img src="./design/Desktop_1350px.jpg">
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
@@ -67,9 +65,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
@@ -83,5 +78,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- Website [your-website.com](https://https://melikeasahin.github.io/devchallenges-example/guess-the-word-master/)
+- GitHub [@your-username](https://https://github.com/melikeasahin)
