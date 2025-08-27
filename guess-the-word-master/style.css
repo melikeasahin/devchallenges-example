@@ -5,127 +5,107 @@
 }
 
 body {
-  width: 0 auto;
-  height: 100vh;
   font-family: "Outfit", sans-serif;
-  color: hsl(216, 33%, 96%);
-  background-image: url("./resources/bg-guess-the-word.jpg");
+  background-image: url(./resources/bg-guess-the-word.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  background: hsl(231, 44%, 12%);
-  border-radius: 0.86rem;
-  padding: 1.4rem;
+  background-color: hsl(231, 44%, 11%);
+  padding: 1.6rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .latters {
   font-size: 2rem;
-  background: hsl(215, 18%, 35%);
-  box-shadow: 0px 4px 0px 0px #030616;
-  backdrop-filter: blur(8.5px);
+  background-color: hsl(215, 18%, 35%);
+  color: hsl(216, 33%, 96%);
   border-radius: 0.25rem;
-  padding: 0.8rem 4rem;
+  box-shadow: 0 4px 2px hsl(231, 44%, 5%);
+  padding: 1rem 4rem;
+  letter-spacing: 0.3rem;
 }
 
-.right {
-  font-size: 1rem;
+.status-bar {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
+  color: hsl(216, 33%, 96%);
+  font-size: 0.95rem;
 }
 
-.tries-box {
+.tries {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.tries {
-  font-size: 0.75rem;
-}
-.tries-dots {
-  display: flex;
-  gap: 0.4rem;
-  margin-left: 0.5rem;
 }
 
 .tries-dot {
-  font-size: 1.25rem;
-  color: hsl(286, 76%, 61%);
-  transition: opacity 0.3s ease;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: hsl(290, 54%, 28%);
+  transition: background-color 0.3s ease;
+}
+
+.tries-dots {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+  flex-direction: row-reverse;
 }
 
 .tries-dot.used {
-  opacity: 0.2;
+  background-color: hsl(215, 18%, 35%);
 }
 
-.mistakes-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .mistakes {
-  font-size: 0.75rem;
+  display: flex;
 }
 
 .box {
-  font-size: medium;
-  padding: 0.4rem 0.8rem;
-  margin: 1.8rem;
-  border: 2px solid hsl(215, 18%, 35%);
-  border-radius: 0.45rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin: 1.8rem 0;
 }
 
-.letter-input {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  text-align: center;
-  border: 2px solid hsl(215, 18%, 35%);
-  border-radius: 0.45rem;
-  background-color: transparent;
+.letter-box {
+  width: 2.8rem;
   color: hsl(216, 33%, 96%);
-  outline: none;
-  transition: border-color 0.3s ease;
+  background-color: transparent;
+  font-size: 1.25rem;
+  border: hsl(215, 18%, 35%) 2px solid;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
 }
 
-.letter-input:focus {
-  border-color: hsl(286, 76%, 61%);
+.letter-box:focus {
+  border: 2px solid hsl(286, 76%, 61%); /* Mor kenarlık */
+  outline: none; /* Varsayılan mavi kenarlığı kaldırır */
 }
 
-#inputContainer {
+.button-bar {
   display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1.3rem;
 }
 
 button {
-  font-size: 0.875rem;
-  color: hsl(216, 33%, 96%);
-  background: hsl(286, 76%, 61%);
-  box-shadow: 0px 4px 0px 0px hsl(290, 54%, 28%);
+  background-color: hsl(286, 76%, 61%);
+  border-radius: 0.4rem;
   border: none;
-  border-radius: 0.45rem;
+  box-shadow: 0 3px 2px 0 hsl(290, 54%, 28%);
+  color: hsl(216, 33%, 96%);
   padding: 0.6rem 2rem;
-  cursor: pointer;
 }

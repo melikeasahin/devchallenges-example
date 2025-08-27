@@ -3,40 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>guess the word master</title>
+    <title>Guess the word master</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div>
-        <img
-          src="./resources/word-scramblle-logo.svg"
-          alt="title"
-          class="title"
-        />
-      </div>
-      <div id="scrambledWord" class="latters"></div>
-      <div class="right">
-        <div class="tries-box">
-          <div>Tries (<span id="triesCount">0</span>/6):</div>
-          <div id="triesDots" class="tries-dots"></div>
+      <img
+        src="./resources/word-scramblle-logo.svg"
+        alt="title"
+        class="image"
+      />
+      <div class="latters"></div>
+      <div class="status-bar">
+        <div class="tries">
+          Triese(<span id="triesCount">0</span>/5):
+          <div class="tries-dots" id="triesDots"></div>
         </div>
-        <div class="mistakes-box">
-          <div>Mistakes: <span id="mistakesList">-</span></div>
-        </div>
+        <div class="mistakes">Mistakes: <span id="mistakesList"></span></div>
       </div>
-      <div id="inputContainer">
-        <div class="box"></div>
-      </div>
-      <div class="button-container">
-        <button id="randomButton" type="button">Random</button>
-        <button id="resetButton" type="reset">Reset</button>
+      <div class="box" id="inputContainer"></div>
+      <div class="button-bar">
+        <button id="randomButton">Random</button>
+        <button id="resetButton">Reset</button>
       </div>
     </div>
     <script src="./script.js"></script>
