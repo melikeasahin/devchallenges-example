@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: #20293a;
+  color: #e3e8ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #202932;
+  padding: 4rem 1rem 8rem 1rem;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  background-color: #4a5567;
+  background-image: url();
+  padding: 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mix {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.famous-quotes,
+.inspirational {
+  border: 2px solid #aeb0ff;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1rem;
+  color: #aeb0ff;
+}
+
+.quote {
+  padding: 0.8rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.button-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.random,
+.share {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 1rem;
+  background-color: #4a5567;
+  color: #e3e8ef;
+  padding: 1.2rem;
+}
